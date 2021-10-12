@@ -36,8 +36,7 @@ pip install -e torch-cam/.
 
 ## using your CAM
 ###CAM
-
-[Learning Deep Features for Discriminative Localization](https://arxiv.org/abs/1512.04150): the original CAM paper
+-[Learning Deep Features for Discriminative Localization](https://arxiv.org/abs/1512.04150): the original CAM paper
 
 You can find the exhaustive list of supported CAM methods in the [documentation](https://frgfm.github.io/torch-cam/cams.html), then use it as follows:
 
