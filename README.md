@@ -35,8 +35,8 @@ pip install -e torch-cam/.
 
 
 ## using your CAM
-###CAM
--[Learning Deep Features for Discriminative Localization](https://arxiv.org/abs/1512.04150): the original CAM paper
+### CAM
+[Learning Deep Features for Discriminative Localization](https://arxiv.org/abs/1512.04150): the original CAM paper
 
 You can find the exhaustive list of supported CAM methods in the [documentation](https://frgfm.github.io/torch-cam/cams.html), then use it as follows:
 
@@ -51,7 +51,7 @@ cam(class_idx=100)
 
 *Please note that by default, the layer at which the CAM is retrieved is set to the last non-reduced convolutional layer. If you wish to investigate a specific layer, use the `target_layer` argument in the constructor.*
 
-###ScoreCAM
+### ScoreCAM
 
 paper:[Score-CAM:Score-Weighted Visual Explanations for Convolutional Neural Networks](https://arxiv.org/pdf/1910.01279.pdf)
 
@@ -64,7 +64,7 @@ with torch.no_grad(): out = model(input_tensor)
 cam(class_idx=100)
 ```
 
-###SSCAM
+### SSCAM
 paper:[SS-CAM: Smoothed Score-CAM for Sharper Visual Feature Localization](https://arxiv.org/pdf/2006.14255.pdf)
 
 ```python
@@ -76,7 +76,7 @@ with torch.no_grad(): out = model(input_tensor)
 cam(class_idx=100)
 ```
 
-###ISCAM
+### ISCAM
 paper:[IS-CAM: Integrated Score-CAM for axiomatic-based explanations](https://arxiv.org/pdf/2010.03023.pdf)
 
 ```python
@@ -88,7 +88,7 @@ with torch.no_grad(): out = model(input_tensor)
 cam(class_idx=100)
 ```
 
-###GradCAM
+### GradCAM
 paper:[Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization](https://arxiv.org/pdf/1610.02391.pdf)
 
 ```python
@@ -100,7 +100,7 @@ scores = model(input_tensor)
 cam(class_idx=100, scores=scores)
 ```
 
-###Grad-CAM++
+### Grad-CAM++
 paper:[Grad-CAM++: Improved Visual Explanations for Deep Convolutional Networks](https://arxiv.org/pdf/1710.11063.pdf)
 
 ```python
@@ -112,7 +112,7 @@ scores = model(input_tensor)
 cam(class_idx=100, scores=scores)
 ```
 
-###Smooth Grad-CAM++
+### Smooth Grad-CAM++
 paper:[Smooth Grad-CAM++: An Enhanced Inference Level Visualization Technique for Deep Convolutional Neural Network Models](https://arxiv.org/pdf/1908.01224.pdf)
 
 ```python
@@ -124,7 +124,7 @@ scores = model(input_tensor)
 cam(class_idx=100, scores=scores)
 ```
 
-###XGradCAM
+### XGradCAM
 paper:[Axiom-based Grad-CAM: Towards Accurate Visualization and Explanation of CNNs](https://arxiv.org/pdf/2008.02312.pdf)
 
 ```python
@@ -136,7 +136,7 @@ scores = model(input_tensor)
 cam(class_idx=100, scores=scores)
 ```
 
-###LayerCAM
+### LayerCAM
 paper:[LayerCAM: Exploring Hierarchical Class Activation Maps for Localization](http://mmcheng.net/mftp/Papers/21TIP_LayerCAM.pdf)
 
 ```python
