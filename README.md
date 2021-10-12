@@ -36,6 +36,7 @@ pip install -e torch-cam/.
 
 ## using your CAM
 ###CAM
+
 [Learning Deep Features for Discriminative Localization](https://arxiv.org/abs/1512.04150): the original CAM paper
 
 You can find the exhaustive list of supported CAM methods in the [documentation](https://frgfm.github.io/torch-cam/cams.html), then use it as follows:
@@ -52,6 +53,7 @@ cam(class_idx=100)
 *Please note that by default, the layer at which the CAM is retrieved is set to the last non-reduced convolutional layer. If you wish to investigate a specific layer, use the `target_layer` argument in the constructor.*
 
 ###ScoreCAM
+
 paper:[Score-CAM:Score-Weighted Visual Explanations for Convolutional Neural Networks](https://arxiv.org/pdf/1910.01279.pdf)
 
 ```python
